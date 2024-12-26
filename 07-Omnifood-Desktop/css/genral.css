@@ -28,8 +28,12 @@ Paragraph Default: 1.6
 - Tints:
 #fdf2e9
 #fae5d3
+#eb984e
 
 - Shades:
+#cf711f
+#45260a
+
 - Accents:
 - Greys: 
 #555
@@ -37,6 +41,8 @@ Paragraph Default: 1.6
 #6f6f6f (lightest grey allowed on #fdf2e9)
 
 --- 05 SHADOWS
+
+0 2.4px 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
@@ -148,15 +154,21 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
+
+  text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
-  text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* Put transition on the original "state" */
   /* transition: background-color 300ms; */
@@ -187,6 +199,18 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -224,6 +248,14 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  /* border-radius: inherit; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTING CLASSES */
