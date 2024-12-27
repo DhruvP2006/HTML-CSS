@@ -122,12 +122,13 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
-    background-color: #fdf2e9;
-    z-index: 1000;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -141,7 +142,7 @@
     transition: all 0.5s ease-in;
 
     /* Hide navigation */
-    /* Allows NO transition at all */
+    /* Allows NO transitions at all */
     /* display: none; */
 
     /* 1) Hide it visually */
@@ -162,11 +163,11 @@
   }
 
   .icon-mobile-nav[name="close-outline"] {
-    display: none;
+    display: block;
   }
 
   .icon-mobile-nav[name="menu-outline"] {
-    display: block;
+    display: none;
   }
 
   .main-nav-list {
