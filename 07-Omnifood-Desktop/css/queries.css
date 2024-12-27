@@ -123,6 +123,7 @@
   .btn-mobile-nav {
     display: block;
     background-color: #fdf2e9;
+    z-index: 1000;
   }
 
   .main-nav {

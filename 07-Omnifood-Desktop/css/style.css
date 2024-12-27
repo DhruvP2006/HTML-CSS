@@ -58,8 +58,9 @@
 /* MOBILE */
 .btn-mobile-nav {
   border: none;
-  background-color: none;
+  background: none;
   cursor: pointer;
+
   display: none;
 }
 
