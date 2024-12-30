@@ -117,6 +117,8 @@
 }
 
 .hero-img {
+  display: flex;
+  justify-self: center;
   width: 100%;
 }
 

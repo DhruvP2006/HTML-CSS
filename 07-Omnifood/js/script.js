@@ -21,11 +21,16 @@ yearEl.textContent = currentYear;
 // Make mobile navigation work
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-
+const mainNavLinkEl = document.querySelectorAll(".main-nav-list");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+mainNavLinkEl.forEach((link) => {
+  link.addEventListener("click", function () {
+    headerEl.classList.toggle("nav-open");
+  });
+});
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation (FOR SAFARI ONLY)
 
@@ -73,7 +78,7 @@ const obs = new IntersectionObserver(
     }
   },
   {
-    // In te viewport
+    // In the viewport
     root: null,
     threshold: 0,
     rootMargin: "-80px",
