@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Hospital Map</title>
+  </head>
+  <body>
+    <h1>Hospital Floor Plan</h1>
+    <p>Click on the sections below to view details.</p>
+
+    <img
+      src="./assests/hospital-layout.png"
+      alt="Map of City General Hospital Ground Floor"
+      usemap="#hospitalmap"
+      width="600"
+      height="400"
+    />
+
+    <map name="hospitalmap">
+      <area
+        shape="rect"
+        coords="0,0,200,400"
+        href="services.html"
+        alt="Emergency Ward"
+        title="Go to Emergency Services"
+      />
+
+      <area
+        shape="rect"
+        coords="400,0,600,400"
+        href="doctors.html"
+        alt="Pharmacy"
+        title="View Pharmacy Information"
+      />
+    </map>
+
+    <p>
+      <small
+        >Note: The left side of the map corresponds to Emergency, and the right
+        side corresponds to the Pharmacy.</small
+      >
+    </p>
+
+    <hr />
+
+    <footer>
+      <a href="navigation.html">Back to Navigation</a>
+    </footer>
+  </body>
+</html>

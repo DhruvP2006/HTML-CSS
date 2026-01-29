@@ -1,0 +1,106 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #005a9c;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto; /* Adds scrollbar if table is too wide on mobile */
+}
+
+/* --- MAIN TABLE STYLING --- */
+.appointment-table {
+  width: 100%;
+
+  /* REQUIREMENT: Add border-collapse */
+  /* This merges the double borders of adjacent cells into a single line */
+  border-collapse: collapse;
+
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+/* --- CAPTION --- */
+.appointment-table caption {
+  caption-side: top;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* --- HEADER STYLING --- */
+/* REQUIREMENT: Style table header */
+.appointment-table th {
+  background-color: #005a9c; /* Hospital Blue */
+  color: #ffffff;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #004080;
+}
+
+/* Specific styling for the top header "Outpatient List" */
+.main-header th {
+  background-color: #003366; /* Darker Blue */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- CELL STYLING --- */
+.appointment-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Light grey border */
+}
+
+/* --- ZEBRA STRIPING --- */
+/* REQUIREMENT: Alternate row colors */
+/* Selects every EVEN row in the tbody */
+.appointment-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* --- HOVER EFFECT --- */
+/* REQUIREMENT: Highlight row on hover */
+.appointment-table tbody tr:hover {
+  background-color: #e2e6ea; /* Light blue-grey highlight */
+  cursor: default;
+  transition: background-color 0.2s ease;
+}
+
+/* --- FOOTER STYLING --- */
+/* REQUIREMENT: Style table footer */
+.appointment-table tfoot {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+.appointment-table tfoot td {
+  border: 1px solid #333;
+}
+
+.footer-label {
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* --- NAVIGATION LINK --- */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #005a9c;
+  font-weight: bold;
+}

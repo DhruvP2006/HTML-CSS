@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f5;
+  padding: 20px;
+}
+
+/* THE BOX MODEL EXPLAINED:
+   1. Content: The text/images inside.
+   2. Padding: Space between Content and Border.
+   3. Border: The line around the Padding.
+   4. Margin: Space outside the Border (between elements).
+*/
+
+/* --- MAIN CONTAINER CLASS --- */
+.content-box {
+  /* Box Sizing: Ensures padding/border are included in width calculation */
+  box-sizing: border-box;
+
+  /* MARGIN: Pushes other elements away (The white space outside the box) */
+  margin-bottom: 40px;
+
+  /* BORDER: The visible boundary */
+  border: 2px solid #005a9c;
+  border-radius: 8px; /* Rounded corners */
+
+  /* PADDING: Keeps the text away from the border (The space inside) */
+  padding: 30px;
+
+  /* Background fills the content and padding area */
+  background-color: #ffffff;
+
+  /* Optional: Limit width to make margins visible on large screens */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- SPECIFIC STYLING FOR HIERARCHY (Lists) --- */
+.hierarchy-section ul {
+  /* Adding a box around the list itself */
+  border-left: 4px solid #ddd;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.hierarchy-section li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* --- SPECIFIC STYLING FOR GLOSSARY (Definition Lists) --- */
+/* Each term/definition pair is wrapped in a 'term-box' div */
+.term-box {
+  /* MARGIN: Space between each dictionary entry */
+  margin-bottom: 15px;
+
+  /* BORDER: A light border around each entry */
+  border: 1px solid #ccc;
+
+  /* PADDING: Space inside the entry card */
+  padding: 15px;
+
+  background-color: #f9f9f9;
+}
+
+.term-box dt {
+  color: #005a9c;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.term-box dd {
+  /* Resetting default browser margin for dd */
+  margin-left: 0;
+  color: #555;
+}
+
+/* --- Header & Footer Styling --- */
+.main-header,
+.main-footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-footer a {
+  /* Making the link look like a button using Box Model properties */
+  display: inline-block;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+
+  padding: 10px 20px; /* Inner space */
+  border-radius: 5px; /* Border radius */
+  border: 1px solid #333;
+
+  transition: background-color 0.3s;
+}
+
+.main-footer a:hover {
+  background-color: #555;
+  border-color: #555;
+}

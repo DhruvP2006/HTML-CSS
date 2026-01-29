@@ -1,0 +1,95 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.top-banner {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* --- NAVIGATION BAR CONTAINER --- */
+.navbar {
+  /* REQUIREMENT: Use Flexbox for layout */
+  display: flex;
+
+  /* REQUIREMENT: Align menu items horizontally (pushes brand left, links right) */
+  justify-content: space-between;
+
+  /* Vertically center items in the bar */
+  align-items: center;
+
+  background-color: #005a9c; /* Hospital Blue */
+  padding: 0 40px; /* Horizontal padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+  /* REQUIREMENT: Make navigation bar sticky */
+  position: sticky;
+  top: 0; /* Sticks to the very top of the viewport */
+  z-index: 1000; /* Ensures nav stays on top of other content */
+}
+
+/* Brand Styling */
+.nav-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* --- NAVIGATION LINKS (UL) --- */
+.nav-links {
+  /* Making the UL a flex container aligns the LIs horizontally */
+  display: flex;
+  list-style: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+
+  /* REQUIREMENT: Add spacing (Gap is the modern way to space flex items) */
+  gap: 20px;
+}
+
+/* --- LINKS STYLING (A) --- */
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: #ecf0f1; /* Light grey/white text */
+  font-weight: 500;
+  padding: 20px 10px; /* Padding increases the clickable area */
+  transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+/* REQUIREMENT: Add hover effect to navigation links */
+.nav-links a:hover {
+  background-color: #004080; /* Darker blue background */
+  color: #ffd700; /* Gold text */
+}
+
+/* --- Content Styling (For context) --- */
+.content-area {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.contact-box {
+  background-color: #eef2f5;
+  padding: 20px;
+  border-left: 5px solid #005a9c;
+  border-radius: 4px;
+}
+
+.contact-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-box li {
+  margin-bottom: 10px;
+}

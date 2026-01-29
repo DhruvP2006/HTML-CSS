@@ -1,0 +1,63 @@
+/* =========================================
+   TASK 6: IMAGE STYLING & POSITIONING
+   ========================================= */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  padding: 20px;
+  color: #333;
+}
+
+/* --- FIGURE CONTAINER --- */
+/* Used to group the image and caption together */
+.map-container {
+  /* REQUIREMENT: Center image on page */
+  /* Setting a max-width prevents it from getting too wide on huge screens */
+  max-width: 800px;
+  /* margin: 0 auto centers block-level elements horizontally */
+  margin: 0 auto;
+  text-align: center; /* Centers the caption text inside */
+}
+
+/* --- IMAGE STYLING --- */
+.interactive-map {
+  /* REQUIREMENT: Make image responsive */
+  max-width: 100%; /* Ensures image never exceeds the screen width */
+  height: auto; /* Maintains the aspect ratio so image doesn't stretch */
+  display: block; /* Removes the small gap often seen under inline images */
+
+  /* REQUIREMENT: Center image (Internal alignment) */
+  margin: 0 auto;
+
+  /* REQUIREMENT: Add border and shadow */
+  border: 5px solid #ffffff; /* Thick white border acts like a picture frame */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft drop shadow for depth */
+  border-radius: 8px; /* Slight rounded corners for a modern look */
+
+  /* Smooth transition for hover effect */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Optional: Add a subtle lift effect when hovering over the map */
+.interactive-map:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* --- CAPTION STYLING --- */
+/* REQUIREMENT: Style captions using CSS */
+figcaption {
+  margin-top: 15px;
+  font-style: italic;
+  color: #666;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #005a9c; /* Blue accent on the left */
+  display: inline-block; /* Makes background wrap text nicely */
+  text-align: left;
+}

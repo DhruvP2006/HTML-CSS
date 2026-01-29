@@ -1,0 +1,104 @@
+/* =========================================
+   TASK 4: LIST STYLING & NESTED SELECTORS
+   ========================================= */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+}
+
+/* --- 1. ORDERED LIST STYLING (Core Departments) --- */
+/* Requirement: Use different colors for ordered list */
+.core-depts {
+  color: #005a9c; /* Blue text for the list items */
+  font-weight: bold;
+}
+
+.core-depts li {
+  padding: 5px 0;
+}
+
+/* Optional: Style the numbers specifically using ::marker */
+.core-depts ::marker {
+  color: #e63946; /* Red numbers */
+  font-weight: bold;
+}
+
+/* --- 2. NESTED LIST STYLING (Medical Team) --- */
+
+/* Requirement: Remove bullets from department list */
+.specialist-list {
+  list-style-type: none; /* Removes bullets from the parent list */
+  padding-left: 0; /* Aligns text to the left */
+}
+
+/* Requirement: Style department names using larger font */
+/* Targeting the direct children (LI) of the main UL */
+.specialist-list > li {
+  font-size: 1.3rem;
+  margin-bottom: 20px; /* Spacing between departments */
+  color: #2c3e50; /* Dark distinct color for Dept headers */
+  border-bottom: 1px solid #eee; /* Subtle separator */
+  padding-bottom: 10px;
+}
+
+/* Requirement: Indent nested doctor lists */
+.specialist-list ul {
+  margin-top: 10px;
+  padding-left: 40px; /* The Indentation */
+  list-style-type: square; /* Square bullets for doctors to differentiate */
+}
+
+/* Styling the Doctors' names specifically */
+.specialist-list ul li {
+  font-size: 1rem; /* Reset font size back to normal */
+  color: #555; /* Grey text for doctors */
+  font-weight: normal;
+  border: none; /* Remove the border inherited from parent */
+  margin-bottom: 5px;
+}
+
+/* Hover effect for doctors */
+.specialist-list ul li:hover {
+  color: #005a9c;
+  cursor: pointer;
+}
+
+/* --- 3. UNORDERED LIST (Support Services) --- */
+/* Requirement: Use different colors for unordered list */
+.support-list {
+  color: #27ae60; /* Green text for support services */
+  list-style-type: circle; /* Circle bullets */
+}
+
+.support-list li {
+  padding: 5px 0;
+}
+
+/* --- 4. DEFINITION LIST (Abbreviations) --- */
+dl {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+dt {
+  color: #005a9c;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+dd {
+  margin-left: 20px;
+  color: #666;
+  font-style: italic;
+}

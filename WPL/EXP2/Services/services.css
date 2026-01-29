@@ -1,0 +1,99 @@
+/* =========================================
+   TASK 2: SERVICE PAGE STYLING
+   ========================================= */
+
+/* 1. General Page Styling for Readability */
+body {
+  /* Using Open Sans for high legibility on screens */
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container to center the content like a document */
+.service-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 2. Heading Typography (Merriweather Font) */
+h1,
+h2,
+h3 {
+  font-family:
+    "Merriweather", serif; /* Serif font for headings (Professional) */
+  color: #003366; /* Dark Navy Blue */
+  margin-bottom: 15px;
+}
+
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Spacing out letters for impact */
+  border-bottom: 2px solid #005a9c;
+  padding-bottom: 10px;
+}
+
+/* 3. Highlighting & Emphasis Styles */
+
+/* Style for <mark> - The Highlighter Effect */
+mark {
+  background-color: #fff3cd; /* Soft Yellow */
+  color: #856404; /* Dark brownish-yellow text */
+  padding: 2px 6px; /* Adds breathing room around text */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for <strong> - Bold and Urgent */
+strong {
+  font-weight: 700;
+  color: #d9534f; /* Medical Red for urgency */
+}
+
+/* Style for <em> - Intro Text */
+.intro-text em {
+  color: #555;
+  font-size: 1.1rem;
+  display: block; /* Makes it stand out as a block of text */
+  margin-bottom: 20px;
+  border-left: 4px solid #005a9c; /* Blue accent bar on the left */
+  padding-left: 15px;
+}
+
+/* 4. Text Properties & Layout */
+.service-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+p {
+  line-height: 1.8; /* Increased line height for better readability */
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* 5. Styling Abbreviations (<abbr>) */
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #666; /* Subtle hint that it's hoverable */
+  cursor: help; /* Changes mouse cursor to a question mark */
+  font-weight: 600;
+  color: #005a9c;
+}
+
+/* 6. Footer & Small Text */
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 30px 0;
+}
+
+small {
+  color: #777;
+  font-size: 0.85rem;
+  font-style: italic;
+}

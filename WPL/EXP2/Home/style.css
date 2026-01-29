@@ -1,0 +1,140 @@
+/* --- Element Selectors & Basic Properties --- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+
+  /* Sticky Footer Logic */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- HEADER LAYOUT --- */
+#main-header {
+  background-color: #f0f8ff;
+  padding: 10px 40px;
+  border-bottom: 3px solid #005a9c;
+
+  /* Desktop: Aligns Branding (Left) and Nav (Right) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- BRANDING SIDE-BY-SIDE LOGIC --- */
+.header-branding {
+  display: flex; /* Places Logo and H1 side-by-side */
+  align-items: center; /* Centers them vertically */
+  gap: 15px; /* Adds space between the logo and the text */
+}
+
+#hospital-name {
+  color: darkblue;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* --- Main Content --- */
+#content-area {
+  flex: 1; /* Sticky footer logic */
+  width: 100%;
+  box-sizing: border-box;
+
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* --- Footer --- */
+#main-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}
+
+/* --- Navigation Links --- */
+.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block; /* Changed from inline to inline-block for better padding control */
+  margin-left: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #005a9c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (MOBILE & TABLET)
+   ========================================= */
+@media screen and (max-width: 768px) {
+  /* Stack the Header vertically */
+  #main-header {
+    flex-direction: column;
+    padding: 20px 10px; /* Reduce side padding, increase top/bottom */
+    gap: 20px; /* Add space between Logo section and Nav section */
+  }
+
+  /* Center the Branding area */
+  .header-branding {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Reduce Font Size for Mobile */
+  #hospital-name {
+    font-size: 1.4rem;
+  }
+
+  /* Stack Navigation Links Vertically or Center them */
+  .main-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column; /* Stacks links vertically */
+    gap: 15px; /* Adds space between links */
+  }
+
+  .main-nav li {
+    margin-left: 0; /* Remove the left margin used for desktop */
+    display: block; /* Make the whole area clickable width-wise if desired */
+  }
+
+  .main-nav a {
+    font-size: 1.2rem; /* Slightly larger text for touch targets */
+    display: block; /* Makes the link easier to tap */
+    padding: 5px; /* Adds tap area padding */
+  }
+
+  /* Adjust Main Content margins */
+  #content-area {
+    margin: 20px auto;
+    width: 90%; /* Leaves a small gap on the sides */
+  }
+}
