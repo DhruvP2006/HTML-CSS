@@ -1,43 +1,26 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #eef2f5;
-  padding: 20px;
 }
 
-/* THE BOX MODEL EXPLAINED:
-   1. Content: The text/images inside.
-   2. Padding: Space between Content and Border.
-   3. Border: The line around the Padding.
-   4. Margin: Space outside the Border (between elements).
-*/
-
-/* --- MAIN CONTAINER CLASS --- */
 .content-box {
-  /* Box Sizing: Ensures padding/border are included in width calculation */
   box-sizing: border-box;
 
-  /* MARGIN: Pushes other elements away (The white space outside the box) */
   margin-bottom: 40px;
 
-  /* BORDER: The visible boundary */
   border: 2px solid #005a9c;
   border-radius: 8px; /* Rounded corners */
 
-  /* PADDING: Keeps the text away from the border (The space inside) */
   padding: 30px;
 
-  /* Background fills the content and padding area */
   background-color: #ffffff;
 
-  /* Optional: Limit width to make margins visible on large screens */
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* --- SPECIFIC STYLING FOR HIERARCHY (Lists) --- */
 .hierarchy-section ul {
-  /* Adding a box around the list itself */
   border-left: 4px solid #ddd;
   padding-left: 20px;
   margin-top: 10px;
@@ -47,10 +30,7 @@ body {
   margin-bottom: 10px; /* Space between list items */
 }
 
-/* --- SPECIFIC STYLING FOR GLOSSARY (Definition Lists) --- */
-/* Each term/definition pair is wrapped in a 'term-box' div */
 .term-box {
-  /* MARGIN: Space between each dictionary entry */
   margin-bottom: 15px;
 
   /* BORDER: A light border around each entry */

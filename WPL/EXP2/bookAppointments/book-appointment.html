@@ -4,14 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Appointment</title>
+    <link rel="stylesheet" href="./../Home/style.css" />
     <link rel="stylesheet" href="form.css" />
   </head>
   <body>
+    <header id="main-header">
+      <div class="header-branding">
+        <div class="brand-identity">
+          <img src="./../assests/logo.png" alt="logo" height="40" />
+        </div>
+
+        <h1
+          id="hospital-name"
+          title="Providing Excellence in Healthcare since 1995"
+        >
+          Newport Memorial Hospital
+        </h1>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./../Home/index.html">Home</a></li>
+          <li><a href="./../Doctors/doctors.html">Doctors</a></li>
+          <li>
+            <a href="./../appointments/appointments.html">Appointments</a>
+          </li>
+          <li>
+            <a href="./../bookAppointments/book-appointment.html"
+              >Book Appointments</a
+            >
+          </li>
+
+          <li>
+            <a href="./../Department/about-department.html">Departments</a>
+          </li>
+          <li>
+            <a href="./../Services/services.html">Services</a>
+          </li>
+          <li>
+            <a href="./../Navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="./../layout/hospital-map.html">Hospital Map</a>
+          </li>
+          <li><a href="./../media/media.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="form-container">
-      <header>
+      <div>
         <h1>Book an Appointment</h1>
         <p>Please fill out the form below to request a consultation.</p>
-      </header>
+      </div>
 
       <form action="/submit-appointment" method="POST">
         <div class="form-group">

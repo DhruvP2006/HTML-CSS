@@ -4,94 +4,136 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doctors and Departments</title>
+    <link rel="stylesheet" href="./../Home/style.css" />
     <link rel="stylesheet" href="doctors.css" />
   </head>
   <body>
-    <header>
-      <h1>Hospital Departments & Specialists</h1>
+    <header id="main-header">
+      <div class="header-branding">
+        <div class="brand-identity">
+          <img src="./../assests/logo.png" alt="logo" height="40" />
+        </div>
+
+        <h1
+          id="hospital-name"
+          title="Providing Excellence in Healthcare since 1995"
+        >
+          Newport Memorial Hospital
+        </h1>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./../Home/index.html">Home</a></li>
+          <li><a href="./../Doctors/doctors.html">Doctors</a></li>
+          <li>
+            <a href="./../appointments/appointments.html">Appointments</a>
+          </li>
+          <li>
+            <a href="./../bookAppointments/book-appointment.html"
+              >Book Appointments</a
+            >
+          </li>
+
+          <li>
+            <a href="./../Department/about-department.html">Departments</a>
+          </li>
+          <li>
+            <a href="./../Services/services.html">Services</a>
+          </li>
+          <li>
+            <a href="./../Navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="./../layout/hospital-map.html">Hospital Map</a>
+          </li>
+          <li><a href="./../media/media.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <div class="main-container">
+      <section>
+        <h2>Core Medical Departments</h2>
+        <ol class="core-depts">
+          <li>Cardiology Center</li>
+          <li>Neurology & Neurosurgery</li>
+          <li>Pediatrics & Neonatal Care</li>
+          <li>Orthopedics & Joint Replacement</li>
+        </ol>
+      </section>
 
-    <section>
-      <h2>Core Medical Departments</h2>
-      <ol class="core-depts">
-        <li>Cardiology Center</li>
-        <li>Neurology & Neurosurgery</li>
-        <li>Pediatrics & Neonatal Care</li>
-        <li>Orthopedics & Joint Replacement</li>
-      </ol>
-    </section>
+      <hr />
 
-    <hr />
+      <section>
+        <h2>Our Medical Team</h2>
+        <ul class="specialist-list">
+          <li>
+            <strong>Cardiology Center</strong>
+            <ul>
+              <li>Dr. Sarah Jenkins (Chief Cardiologist)</li>
+              <li>Dr. Mark Sloan (Intervention Specialist)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Neurology & Neurosurgery</strong>
+            <ul>
+              <li>Dr. Derek Shepherd (Neurosurgeon)</li>
+              <li>Dr. Amelia Shepherd (Neurologist)</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Pediatrics</strong>
+            <ul>
+              <li>Dr. Arizona Robbins (Pediatric Surgeon)</li>
+              <li>Dr. Alex Karev (Pediatrician)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Our Medical Team</h2>
-      <ul class="specialist-list">
-        <li>
-          <strong>Cardiology Center</strong>
-          <ul>
-            <li>Dr. Sarah Jenkins (Chief Cardiologist)</li>
-            <li>Dr. Mark Sloan (Intervention Specialist)</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Neurology & Neurosurgery</strong>
-          <ul>
-            <li>Dr. Derek Shepherd (Neurosurgeon)</li>
-            <li>Dr. Amelia Shepherd (Neurologist)</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Pediatrics</strong>
-          <ul>
-            <li>Dr. Arizona Robbins (Pediatric Surgeon)</li>
-            <li>Dr. Alex Karev (Pediatrician)</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+      <hr />
 
-    <hr />
+      <section>
+        <h2>Patient Support Services</h2>
+        <ul class="support-list">
+          <li>24/7 Ambulance Service</li>
+          <li>In-patient Pharmacy</li>
+          <li>Cafeteria & Nutrition</li>
+          <li>Blood Bank</li>
+          <li>Chapel & Prayer Room</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Patient Support Services</h2>
-      <ul class="support-list">
-        <li>24/7 Ambulance Service</li>
-        <li>In-patient Pharmacy</li>
-        <li>Cafeteria & Nutrition</li>
-        <li>Blood Bank</li>
-        <li>Chapel & Prayer Room</li>
-      </ul>
-    </section>
+      <hr />
 
-    <hr />
+      <section>
+        <h2>Department Abbreviations</h2>
+        <dl>
+          <dt><strong>ICU</strong></dt>
+          <dd>
+            Intensive Care Unit - For patients with severe or life-threatening
+            illnesses.
+          </dd>
 
-    <section>
-      <h2>Department Abbreviations</h2>
-      <dl>
-        <dt><strong>ICU</strong></dt>
-        <dd>
-          Intensive Care Unit - For patients with severe or life-threatening
-          illnesses.
-        </dd>
+          <dt><strong>OPD</strong></dt>
+          <dd>
+            Out-Patient Department - For patients who do not require
+            hospitalization.
+          </dd>
 
-        <dt><strong>OPD</strong></dt>
-        <dd>
-          Out-Patient Department - For patients who do not require
-          hospitalization.
-        </dd>
+          <dt><strong>ENT</strong></dt>
+          <dd>
+            Ear, Nose, and Throat - Surgical subspecialty dealing with
+            conditions of the head and neck.
+          </dd>
 
-        <dt><strong>ENT</strong></dt>
-        <dd>
-          Ear, Nose, and Throat - Surgical subspecialty dealing with conditions
-          of the head and neck.
-        </dd>
-
-        <dt><strong>OB/GYN</strong></dt>
-        <dd>
-          Obstetrics and Gynecology - Specializing in female reproductive
-          health.
-        </dd>
-      </dl>
-    </section>
+          <dt><strong>OB/GYN</strong></dt>
+          <dd>
+            Obstetrics and Gynecology - Specializing in female reproductive
+            health.
+          </dd>
+        </dl>
+      </section>
+    </div>
   </body>
 </html>

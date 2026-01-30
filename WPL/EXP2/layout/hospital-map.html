@@ -5,18 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Hospital Map</title>
     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="./../Home/style.css" />
   </head>
   <body>
-    <header style="text-align: center; margin-bottom: 20px;">
+       <header id="main-header">
+      <div class="header-branding">
+        <div class="brand-identity">
+          <img src="./../assests/logo.png" alt="logo" height="40" />
+        </div>
+
+        <h1
+          id="hospital-name"
+          title="Providing Excellence in Healthcare since 1995"
+        >
+         Newport Memorial Hospital
+        </h1>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./../Home/index.html">Home</a></li>
+          <li><a href="./../Doctors/doctors.html">Doctors</a></li>
+          <li>
+            <a href="./../appointments/appointments.html">Appointments</a>
+          </li>
+          <li>
+            <a href="./../bookAppointments/book-appointment.html"
+              >Book Appointments</a
+            >
+          </li>
+
+          <li>
+            <a href="./../Department/about-department.html">Departments</a>
+          </li>
+          <li>
+            <a href="./../Services/services.html">Services</a>
+          </li>
+          <li>
+            <a href="./../Navigation/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="./../layout/hospital-map.html">Hospital Map</a>
+          </li>
+          <li><a href="./../media/media.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div style="text-align: center; margin-bottom: 20px;">
       <h1>Hospital Floor Plan</h1>
       <p>Click on the sections below to view details.</p>
-    </header>
+    </div>
 
     <figure class="map-container">
       <img
         class="interactive-map"
         src="./../assests/hospital-layout.png"
-        alt="Map of City General Hospital Ground Floor"
+        alt="Map of  Newport Memorial Hospital Ground Floor"
         usemap="#hospitalmap"
         /* Removed fixed width/height attributes to allow CSS to control size */
       />
